@@ -1,6 +1,8 @@
 import "./style.css";
 import { LocationData } from "./location.js";
 import { WeatherData } from "./weather.js";
+import img from "./images/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg";
+import img2 from "./images/janaine-arioli-sAtNmpS66n4-unsplash.jpg";
 
 async function getWeather() {
   try {
@@ -107,11 +109,9 @@ async function searchWeather(search) {
 
 function dayOrNight(bool) {
   if (!bool) {
-    document.body.style.backgroundImage = `url(
-      ./images/vincentiu-solomon-ln5drpv_ImI-unsplash.jpg)`;
+    document.body.style.backgroundImage = `url(${img})`;
   } else {
-    document.body.style.backgroundImage = `url(
-      "./images/janaine-arioli-sAtNmpS66n4-unsplash.jpg")`;
+    document.body.style.backgroundImage = `url(${img2})`;
   }
 }
 
