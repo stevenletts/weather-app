@@ -92,7 +92,7 @@ function appendItems(parent, ...children) {
 async function searchWeather(search) {
   try {
     const respone = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=a3397bb6b09545328d0112925232003&q=${search}`,
+      `https://api.weatherapi.com/v1/current.json?key=a3397bb6b09545328d0112925232003&q=${search}`,
       { mode: "cors" }
     );
     const responseData = await respone.json();
